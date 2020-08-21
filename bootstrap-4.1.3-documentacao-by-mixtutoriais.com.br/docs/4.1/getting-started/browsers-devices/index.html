@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Aprenda sobre os browsers e dispositivos (dos modernos até os antigos) que suportam o Bootstrap, incluindo quirks e bugs conhecidos, em cada.">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Jekyll v3.8.3">
+
+<title>Browsers e dispositivos · Bootstrap em Português</title>
+
+<!-- Bootstrap core CSS -->
+
+<link href="../../dist/css/bootstrap.css" rel="stylesheet">
+
+
+<!-- Documentation extras -->
+
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" rel="stylesheet">
+
+<link href="../../assets/css/docs.min.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="../../assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="../../assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../../assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="../../assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="../../assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="../../../../favicon.ico">
+<meta name="msapplication-config" content="/docs/4.1/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@getbootstrap">
+<meta name="twitter:creator" content="@getbootstrap">
+<meta name="twitter:title" content="Browsers e dispositivos">
+<meta name="twitter:description" content="Aprenda sobre os browsers e dispositivos (dos modernos até os antigos) que suportam o Bootstrap, incluindo quirks e bugs conhecidos, em cada.">
+<meta name="twitter:image" content="http://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social-logo.png">
+
+<!-- Facebook -->
+<meta property="og:url" content="http://getbootstrap.com.br/docs/4.1/getting-started/browsers-devices/">
+<meta property="og:title" content="Browsers e dispositivos">
+<meta property="og:description" content="Aprenda sobre os browsers e dispositivos (dos modernos até os antigos) que suportam o Bootstrap, incluindo quirks e bugs conhecidos, em cada.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="http://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social.png">
+<meta property="og:image:secure_url" content="http://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-social.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-61016077-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </head>
+  <body>
+    <a id="skippy" class="sr-only sr-only-focusable" href="index.html#content">
+  <div class="container">
+    <span class="skiplink-text">Pular para conteúdo principal</span>
+  </div>
+</a>
+
+
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+  <a class="navbar-brand mr-0 mr-md-2" href="../../../../index.html" aria-label="Bootstrap"><svg class="d-block" width="36" height="36" viewbox="0 0 612 612" xmlns="http://www.w3.org/2000/svg" focusable="false"><title>Bootstrap</title><path fill="currentColor" d="M510 8a94.3 94.3 0 0 1 94 94v408a94.3 94.3 0 0 1-94 94H102a94.3 94.3 0 0 1-94-94V102a94.3 94.3 0 0 1 94-94h408m0-8H102C45.9 0 0 45.9 0 102v408c0 56.1 45.9 102 102 102h408c56.1 0 102-45.9 102-102V102C612 45.9 566.1 0 510 0z"/><path fill="currentColor" d="M196.77 471.5V154.43h124.15c54.27 0 91 31.64 91 79.1 0 33-24.17 63.72-54.71 69.21v1.76c43.07 5.49 70.75 35.82 70.75 78 0 55.81-40 89-107.45 89zm39.55-180.4h63.28c46.8 0 72.29-18.68 72.29-53 0-31.42-21.53-48.78-60-48.78h-75.57zm78.22 145.46c47.68 0 72.73-19.34 72.73-56s-25.93-55.37-76.46-55.37h-74.49v111.4z"/></svg>
+</a>
+
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link " href="../../../../index.html" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Início</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="../introduction/index.html" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentação</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="../../examples/index.html" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Exemplos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://themes.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Temas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://github.com/frontendbr/vagas" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Jobs');" target="_blank" rel="noopener">Vagas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://expo.getbootstrap.com" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');" target="_blank" rel="noopener">Expo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://blog.getbootstrap.com.br" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog <small>(Em Português)</small></a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <li class="nav-item dropdown">
+      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="index.html#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        v4.1
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+        <a class="dropdown-item active" href="../../index.html">Mais recente (4.1.x)</a>
+        <a class="dropdown-item" href="../../../4.0/index.html">v4.0.0</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
+        <a class="dropdown-item" href="../../../3.3/index.html" target="_blank">v3.3.7 (Português)</a>
+        <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
+      </div>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://github.com/bootstrapbrasil/bootstrap" target="_blank" rel="noopener" aria-label="GitHub"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 499.36" focusable="false"><title>GitHub</title><path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z" fill="currentColor" fill-rule="evenodd"/></svg>
+</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 416.32" focusable="false"><title>Twitter</title><path d="M160.83 416.32c193.2 0 298.92-160.22 298.92-298.92 0-4.51 0-9-.2-13.52A214 214 0 0 0 512 49.38a212.93 212.93 0 0 1-60.44 16.6 105.7 105.7 0 0 0 46.3-58.19 209 209 0 0 1-66.79 25.37 105.09 105.09 0 0 0-181.73 71.91 116.12 116.12 0 0 0 2.66 24c-87.28-4.3-164.73-46.3-216.56-109.82A105.48 105.48 0 0 0 68 159.6a106.27 106.27 0 0 1-47.53-13.11v1.43a105.28 105.28 0 0 0 84.21 103.06 105.67 105.67 0 0 1-47.33 1.84 105.06 105.06 0 0 0 98.14 72.94A210.72 210.72 0 0 1 25 370.84a202.17 202.17 0 0 1-25-1.43 298.85 298.85 0 0 0 160.83 46.92" fill="currentColor"/></svg>
+</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link p-2" href="http://bootstrapbrasil-slack.herokuapp.com" target="_blank" rel="noopener" aria-label="Slack"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" focusable="false"><title>Slack</title><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"/><path d="M490.54 185.6C437.7 9.59 361.6-31.34 185.6 21.46S-31.3 150.4 21.46 326.4 150.4 543.3 326.4 490.54 543.34 361.6 490.54 185.6zM401.7 299.8l-33.15 11.05 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.38-68.36 22.92 11.46 34.38c4.5 13.92-2.87 29.06-16.78 33.56-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18l-11.46-34.43-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.5-13.92 2.87-29.06 16.78-33.56l33.12-11.03-22.1-65.9-33.15 11.05c-2.87.82-6.14 1.64-9 1.23a27.32 27.32 0 0 1-24.56-18c-4.48-13.93 2.89-29.07 16.81-33.58l33.15-11.05-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.46 34.38 68.36-22.92-11.46-34.38c-4.5-13.92 2.87-29.06 16.78-33.56s29.06 2.87 33.56 16.78l11.47 34.42 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.87 29.06-16.78 33.56L329.7 194.6l22.1 65.9 33.15-11.05c13.92-4.5 29.06 2.87 33.56 16.78s-2.88 29.07-16.81 33.57z" fill="currentColor"/></svg>
+</a>
+    </li>
+  </ul>
+
+  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="../download/index.html">Baixar</a>
+</header>
+
+
+    <div class="container-fluid">
+      <div class="row flex-xl-nowrap">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
+          <form class="bd-search d-flex align-items-center">
+  <input type="search" class="form-control" id="search-input" placeholder="Pesquisar..." aria-label="Pesquisar por..." autocomplete="off" data-siteurl="http://getbootstrap.com.br" data-docs-version="4.1">
+  <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Alternar navegação da documentação"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+</button>
+</form>
+
+<nav class="collapse bd-links" id="bd-docs-nav"><div class="bd-toc-item active">
+      <a class="bd-toc-link" href="../introduction/index.html">
+        Ponto de partida
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="../introduction/index.html">
+              Introdução
+            </a></li><li>
+            <a href="../download/index.html">
+              Download
+            </a></li><li>
+            <a href="../contents/index.html">
+              Conteúdos
+            </a></li><li class="active bd-sidenav-active">
+            <a href="index.html">
+              Browsers e dispositivos
+            </a></li><li>
+            <a href="../javascript/index.html">
+              JavaScript
+            </a></li><li>
+            <a href="../theming/index.html">
+              Tematização
+            </a></li><li>
+            <a href="../build-tools/index.html">
+              Ferramentas de build
+            </a></li><li>
+            <a href="../webpack/index.html">
+              Webpack
+            </a></li><li>
+            <a href="../accessibility/index.html">
+              Acessibilidade
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="../../layout/overview/index.html">
+        Layout
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="../../layout/overview/index.html">
+              Visão geral
+            </a></li><li>
+            <a href="../../layout/grid/index.html">
+              Grid
+            </a></li><li>
+            <a href="../../layout/media-object/index.html">
+              Objeto de mídia
+            </a></li><li>
+            <a href="../../layout/utilities-for-layout/index.html">
+              Utilitários de layout
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="../../content/reboot/index.html">
+        Conteúdo
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="../../content/reboot/index.html">
+              Reboot
+            </a></li><li>
+            <a href="../../content/typography/index.html">
+              Tipografia
+            </a></li><li>
+            <a href="../../content/code/index.html">
+              Código
+            </a></li><li>
+            <a href="../../content/images/index.html">
+              Imagens
+            </a></li><li>
+            <a href="../../content/tables/index.html">
+              Tabelas
+            </a></li><li>
+            <a href="../../content/figures/index.html">
+              Figuras
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="../../components/alerts/index.html">
+        Componentes
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="../../components/alerts/index.html">
+              Alertas
+            </a></li><li>
+            <a href="../../components/badge/index.html">
+              Badge
+            </a></li><li>
+            <a href="../../components/breadcrumb/index.html">
+              Breadcrumb
+            </a></li><li>
+            <a href="../../components/buttons/index.html">
+              Botões
+            </a></li><li>
+            <a href="../../components/button-group/index.html">
+              Grupos de botões
+            </a></li><li>
+            <a href="../../components/card/index.html">
+              Card
+            </a></li><li>
+            <a href="../../components/carousel/index.html">
+              Carousel
+            </a></li><li>
+            <a href="../../components/collapse/index.html">
+              Collapse
+            </a></li><li>
+            <a href="../../components/dropdowns/index.html">
+              Dropdowns
+            </a></li><li>
+            <a href="../../components/forms/index.html">
+              Formulários
+            </a></li><li>
+            <a href="../../components/input-group/index.html">
+              Grupos de input
+            </a></li><li>
+            <a href="../../components/jumbotron/index.html">
+              Jumbotron
+            </a></li><li>
+            <a href="../../components/list-group/index.html">
+              Grupos de lista
+            </a></li><li>
+            <a href="../../components/modal/index.html">
+              Modal
+            </a></li><li>
+            <a href="../../components/navs/index.html">
+              Navs
+            </a></li><li>
+            <a href="../../components/navbar/index.html">
+              Barras de navegação
+            </a></li><li>
+            <a href="../../components/pagination/index.html">
+              Paginação
+            </a></li><li>
+            <a href="../../components/popovers/index.html">
+              Popovers
+            </a></li><li>
+            <a href="../../components/progress/index.html">
+              Progresso
+            </a></li><li>
+            <a href="../../components/scrollspy/index.html">
+              Scrollspy
+            </a></li><li>
+            <a href="../../components/tooltips/index.html">
+              Tooltips
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="../../utilities/borders/index.html">
+        Utilitários
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="../../utilities/borders/index.html">
+              Bordas
+            </a></li><li>
+            <a href="../../utilities/clearfix/index.html">
+              Clearfix
+            </a></li><li>
+            <a href="../../utilities/close-icon/index.html">
+              Íconde de dispensa
+            </a></li><li>
+            <a href="../../utilities/colors/index.html">
+              Cores
+            </a></li><li>
+            <a href="../../utilities/display/index.html">
+              Display
+            </a></li><li>
+            <a href="../../utilities/embed/index.html">
+              Incorporação
+            </a></li><li>
+            <a href="../../utilities/flex/index.html">
+              Flex
+            </a></li><li>
+            <a href="../../utilities/float.1">
+              Float
+            </a></li><li>
+            <a href="../../utilities/image-replacement/index.html">
+              Substituição por imagens
+            </a></li><li>
+            <a href="../../utilities/position/index.html">
+              Posição
+            </a></li><li>
+            <a href="../../utilities/screenreaders/index.html">
+              Leitores de telas
+            </a></li><li>
+            <a href="../../utilities/shadows/index.html">
+              Sombras
+            </a></li><li>
+            <a href="../../utilities/sizing/index.html">
+              Dimensionamento
+            </a></li><li>
+            <a href="../../utilities/spacing/index.html">
+              Espaçamento
+            </a></li><li>
+            <a href="../../utilities/text/index.html">
+              Texto
+            </a></li><li>
+            <a href="../../utilities/vertical-align/index.html">
+              Alinhamento vertical
+            </a></li><li>
+            <a href="../../utilities/visibility/index.html">
+              Visibilidade
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="../../extend/approach/index.html">
+        Extra
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="../../extend/approach/index.html">
+              Abordagem
+            </a></li><li>
+            <a href="../../extend/icons/index.html">
+              Ícones
+            </a></li></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="../../migration/index.html">
+        Migração
+      </a>
+
+      <ul class="nav bd-sidenav"></ul>
+    </div><div class="bd-toc-item">
+      <a class="bd-toc-link" href="../../about/overview/index.html">
+        Sobre
+      </a>
+
+      <ul class="nav bd-sidenav"><li>
+            <a href="../../about/overview/index.html">
+              Visão Geral
+            </a></li><li>
+            <a href="../../about/brand/index.html">
+              Marca
+            </a></li><li>
+            <a href="../../about/license/index.html">
+              Licença
+            </a></li><li>
+            <a href="../../about/translations/index.html">
+              Traduções
+            </a></li></ul>
+    </div></nav>
+
+        </div>
+
+        
+          <div class="d-none d-xl-block col-xl-2 bd-toc">
+            <ul class="section-nav">
+<li class="toc-entry toc-h2"><a href="index.html#suporte-de-browsers">Suporte de browsers</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="index.html#dispositivos-móveis">Dispositivos móveis</a></li>
+<li class="toc-entry toc-h3"><a href="index.html#browsers-desktop">Browsers desktop</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="index.html#internet-explorer">Internet Explorer</a></li>
+<li class="toc-entry toc-h2"><a href="index.html#modais-e-dropdowns-em-dispositivos-móveis">Modais e dropdowns em dispositivos móveis</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="index.html#overflow-e-rolagem">Overflow e rolagem</a></li>
+<li class="toc-entry toc-h3"><a href="index.html#campos-de-texto-e-rolagem-no-ios">Campos de texto e rolagem no iOS</a></li>
+<li class="toc-entry toc-h3"><a href="index.html#dropdowns-navbar">Dropdowns navbar</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="index.html#zoom-em-browsers">Zoom em browsers</a></li>
+<li class="toc-entry toc-h2"><a href="index.html#sticky-hoverfocus-no-ios">Sticky :hover/:focus no iOS</a></li>
+<li class="toc-entry toc-h2"><a href="index.html#impressão">Impressão</a></li>
+<li class="toc-entry toc-h2"><a href="index.html#browser-padrão-do-android">Browser padrão do Android</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="index.html#menu-select">Menu Select</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="index.html#validação">Validação</a></li>
+</ul>
+          </div>
+        
+
+        <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+          <h1 class="bd-title" id="content">Browsers e dispositivos</h1>
+          <p class="bd-lead">Aprenda sobre os browsers e dispositivos (dos modernos até os antigos) que suportam o Bootstrap, incluindo quirks e bugs conhecidos, em cada.</p>
+          
+
+          <h2 id="suporte-de-browsers">Suporte de browsers</h2>
+
+<p>Bootstrap é suportado pelas versões mais <strong>recentes e estáveis</strong> dos maiores navegadores e plataformas. No Windows, somos suportados pelo <strong>Internet Explorer 10, 11 e Microsoft Edge</strong>.</p>
+
+<p>Navegadores alternativos que usam a versão mais recente do WebKit, Blink ou Gecko (tanto diretamente, quanto através da API web view da plataforma) não suportam explicitamente o Bootstrap. Contudo, o framework funciona normalmente (na maioria dos casos) nesses browsers. Informações mais específicas a respeito estão abaixo.</p>
+
+<p>Você pode consultar nosso leque de browsers com suporte e suas versões no nosso arquivo <a href="https://github.com/bootstrapbrasil/bootstrap/blob/v4-dev/.browserslistrc"><code class="highlighter-rouge">browserslistrc.json</code></a>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># https://github.com/browserslist/browserslist#readme
+
+&gt;= 1%
+last 1 major version
+not dead
+Chrome &gt;= 45
+Firefox &gt;= 38
+Edge &gt;= 12
+Explorer &gt;= 10
+iOS &gt;= 9
+Safari &gt;= 9
+Android &gt;= 4.4
+Opera &gt;= 30
+</code></pre></div></div>
+
+<p>Nós usamos o <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> para obter o suporte esperado (usando prefixos CSS), o qual usa <a href="https://github.com/browserslist/browserslist">Browserslist</a> para gerenciar as versões destes navegadores.</p>
+
+<h3 id="dispositivos-móveis">Dispositivos móveis</h3>
+
+<p>No geral, Bootstrap é suportado pelas versões mais recentes das maiores plataformas padrões dos browsers. No entanto, lembre-se que <em>proxy browsers</em> (como o Opera Mini, modo turbo do Opera Mobile, UC Browser Mini, Amazon Silk) não são suportados.</p>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <td></td>
+      <th>Chrome</th>
+      <th>Firefox</th>
+      <th>Safari</th>
+      <th>Android Browser &amp; WebView</th>
+      <th>Microsoft Edge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Android</th>
+      <td class="text-success">Suportado</td>
+      <td class="text-success">Suportado</td>
+      <td class="text-muted">N/A</td>
+      <td class="text-success">Android v5.0+ Suportado</td>
+      <td class="text-success">Suportado</td>
+    </tr>
+    <tr>
+      <th scope="row">iOS</th>
+      <td class="text-success">Suportado</td>
+      <td class="text-success">Suportado</td>
+      <td class="text-success">Suportado</td>
+      <td class="text-muted">N/A</td>
+      <td class="text-success">Suportado</td>
+    </tr>
+    <tr>
+      <th scope="row">Windows 10 Móvel</th>
+      <td class="text-muted">N/A</td>
+      <td class="text-muted">N/A</td>
+      <td class="text-muted">N/A</td>
+      <td class="text-muted">N/A</td>
+      <td class="text-success">Suportado</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="browsers-desktop">Browsers desktop</h3>
+
+<p>De forma parecida, as versões mais recentes da maioria dos navegadores desktops são suportadas.</p>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <td></td>
+      <th>Chrome</th>
+      <th>Firefox</th>
+      <th>Internet Explorer</th>
+      <th>Microsoft Edge</th>
+      <th>Opera</th>
+      <th>Safari</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Mac</th>
+      <td class="text-success">Suportado</td>
+      <td class="text-success">Suportado</td>
+      <td class="text-muted">N/A</td>
+      <td class="text-muted">N/A</td>
+      <td class="text-success">Suportado</td>
+      <td class="text-success">Suportado</td>
+    </tr>
+    <tr>
+      <th scope="row">Windows</th>
+      <td class="text-success">Suportado</td>
+      <td class="text-success">Suportado</td>
+      <td class="text-success">Suportado, IE10+</td>
+      <td class="text-success">Suportado</td>
+      <td class="text-success">Suportado</td>
+      <td class="text-danger">Not Suportado</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>No Firefox, em adição ao release mais recente e estável, nós também temos suporte da recente versão “<a href="https://www.mozilla.org/en-US/firefox/organizations/#faq">Extended Support Release (ESR)</a>”.</p>
+
+<p>Não oficialmente, Bootstrap vai se apresentar e comportar bem no Chromium, Chrome e Firefox para Linux, além do Internet Explorer 9 (apesar de não termos suporte oficial).</p>
+
+<p>Para consultar alguns bugs que o Bootstrap enfrenta, veja nosso <a href="../../browser-bugs/index.html">Mural de bugs</a>.</p>
+
+<h2 id="internet-explorer">Internet Explorer</h2>
+
+<p>Do Internet Explorer 10 acima, nós temos suporte. No entanto, do IE9 para baixo, não temos. Portanto, esteja atento que algumas propriedades CSS3 e elementos HTML5 não são, totalmente, suportadas no IE10 ou requerem prefixos para compatilidade. Visite o site <a href="https://caniuse.com/">Can I use…</a> para detalhes sobre suporte CSS3 em browsers e recursos HTML5.</p>
+
+<p><strong>Se você precisa de suporte no IE8 ou 9, use o Bootstrap 3</strong>. É a versão mais estável do nosso código e nosso time ainda dá suporte para reparar bugs críticos e alterar a documentação. Contudo, nem um recurso novo será adicionado a ela.</p>
+
+<h2 id="modais-e-dropdowns-em-dispositivos-móveis">Modais e dropdowns em dispositivos móveis</h2>
+
+<h3 id="overflow-e-rolagem">Overflow e rolagem</h3>
+
+<p>Suporte para <code class="highlighter-rouge">overflow: hidden;</code> no elemento <code class="highlighter-rouge">&lt;body&gt;</code> é um pouco limitado, no iOS e Android. Nesse sentido, quando você rola perto da parte superior ou inferior do modal (em algum dos browsers destes dispositivos), o conteúdo do <code class="highlighter-rouge">&lt;body&gt;</code> vai começar a rolar. Veja o <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=175502">bug do Chrome #175502</a> (reparado no Chrome v40) e o <a href="https://bugs.webkit.org/show_bug.cgi?id=153852">bug Webkit #153852</a>.</p>
+
+<h3 id="campos-de-texto-e-rolagem-no-ios">Campos de texto e rolagem no iOS</h3>
+
+<p>A partir do iOS 9.2, enquanto o modal está aberto, se o toque inicial do gesto de rolagem está dentro dos limites de um <code class="highlighter-rouge">&lt;input&gt;</code> de texto ou <code class="highlighter-rouge">&lt;textarea&gt;</code>, o conteúdo do <code class="highlighter-rouge">&lt;body&gt;</code> abaixo do modal vai ser rolado, invés do modal. Veja o <a href="https://bugs.webkit.org/show_bug.cgi?id=153856">bug Webkit #153856</a>.</p>
+
+<h3 id="dropdowns-navbar">Dropdowns navbar</h3>
+
+<p>O elemento <code class="highlighter-rouge">.dropdown-backdrop</code> não é usando no iOS, por causa da complexidade do z-index. Portanto, para fechar dropdowns em navbars, você deve clicar diretamente no elemento dropdown ou <a href="https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile">qualquer outro elemento que vai acionar o evento de clique no iOS</a>).</p>
+
+<h2 id="zoom-em-browsers">Zoom em browsers</h2>
+
+<p>Dar zoom em páginas irá mostrar, inevitavelmente, artefatos de renderização em alguns componentes, tanto no Bootstrap quando no resto da web. Dependendo do problema, poderemos consertá-lo, bastando pesquisar antes e depois abrir um issue (se necessário). Contudo, nós tendemos a ignorar estes problemas, já que eles não possuem soluções diretas, aléms de hacks, normalmente.</p>
+
+<h2 id="sticky-hoverfocus-no-ios">Sticky <code class="highlighter-rouge">:hover</code>/<code class="highlighter-rouge">:focus</code> no iOS</h2>
+
+<p>Enquanto o <code class="highlighter-rouge">:hover</code> não é possível na maioria dos dispositivos de toque, o iOS emula este comportamento, resultando em estilos que persistem depois de soltar um elemento. Estes estilos hover só são interrompidos quando o usuário toca outro elemento. Este comportamento é considerado, largamente, indesejável e aparenta não ser um problema nos dispositivos Android ou Windows.</p>
+
+<p>Durante nossos realeases v4 alpha e beta, nós incluímos códigos incompletos e comentados para dar a opção de usar uma media query que desativaria estilos hover em dispositivos de toque que emulam estes estilos. Isto nunca foi finalizado ou ativado, mas para evitar quebra total, nós optamos em defazar <a href="https://github.com/twbs/mq4-hover-shim">isto</a> e manter os mixins como atalhos para as pseudo-classes.</p>
+
+<h2 id="impressão">Impressão</h2>
+
+<p>Mesmo em alguns browsers modernos, imprimir pode ser bem chatinho.</p>
+
+<p>A partir do Safari v8.0, o uso da classe <code class="highlighter-rouge">.container</code> pode levar o Safari a usar pequenos tamanhos de fontes, quando imprimindo. Veja o <a href="https://github.com/bootstrapbrasil/bootstrap/issues/14868">issue #14868</a> e <a href="https://bugs.webkit.org/show_bug.cgi?id=138192">WebKit bug #138192</a>, para mais detalhes. Uma possível solução alternativa é o seguinte CSS:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@media</span> <span class="n">print</span> <span class="p">{</span>
+  <span class="nc">.container</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="browser-padrão-do-android">Browser padrão do Android</h2>
+
+<p>O Android 4.1 e algumas versões mais recentes são lançadas com um app Browser padrão, que não é o Chrome. Infelizmente, o app Browser tem muitos bugs e inconsistências com CSS.</p>
+
+<h4 id="menu-select">Menu Select</h4>
+
+<p>Em elementos <code class="highlighter-rouge">&lt;select&gt;</code>, o app Browser não irá mostrar os controles laterais se houver <code class="highlighter-rouge">border-radius</code> ou <code class="highlighter-rouge">border</code> aplicadas (veja <a href="https://stackoverflow.com/questions/14744437/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with">esta questão no StackOverflow</a>, para mais detalhes). Use o snippet abaixo para remover o CSS problemático e renderizar o <code class="highlighter-rouge">&lt;select&gt;</code> como um elemento não estilizado, no app Browser do Android. O sniffer do user agent evita interferência com o Chrome, Safari e navegadores Mozilla.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>
+<span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">nua</span> <span class="o">=</span> <span class="nb">navigator</span><span class="p">.</span><span class="nx">userAgent</span>
+  <span class="kd">var</span> <span class="nx">isAndroid</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Mozilla/5.0'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Android '</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'AppleWebKit'</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">&amp;&amp;</span> <span class="nx">nua</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">'Chrome'</span><span class="p">)</span> <span class="o">===</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">isAndroid</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">(</span><span class="s1">'select.form-control'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="s1">'form-control'</span><span class="p">).</span><span class="nx">css</span><span class="p">(</span><span class="s1">'width'</span><span class="p">,</span> <span class="s1">'100%'</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">})</span>
+<span class="nt">&lt;/script&gt;</span></code></pre></figure>
+
+<p>Quer ver um exemplo? <a href="http://jsbin.com/OyaqoDO/2">Veja esta demo no JS Bin</a>.</p>
+
+<h2 id="validação">Validação</h2>
+
+<p>Pensando em dar a melhor experiência para os antigos e bugados browsers, Bootstrap usa <a href="http://browserhacks.com/">hacks CSS</a> em diversos locais para conseguir um CSS único em algumas versões de browsers e, consequentemente, trabalhar em cima dos próprios bugs. Estes hacks, compreensivelmente, levam os validadores CSS a falarem que o código está inválido. Em outros locais, nós também usamos recursos CSS inovadores que ainda não foram padronizados. No entanto, eles são usados puramente para <em>progressive enhancement</em>.</p>
+
+<p>Estes avisos de validação não significam nada na prática, já que a parte sem hacks valida normalmente e a parte com hacks não interfere no funcionamente da parte sem hacks. Portanto, se ignorarmos estes avisos, a parte com hacks é usada em <em>progressive enhancement</em>.</p>
+
+<p>Nossa documentação HTML, da mesma forma tem alguns avisos de validação triviais e inconsequentes, devido a inclusão de uma solução para um certo <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=654072">bug no Firefox</a>.</p>
+
+        </main>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+<script src="../../assets/js/vendor/popper.min.js"></script><script src="../../dist/js/bootstrap.js"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script><script src="../../assets/js/vendor/anchor.min.js"></script>
+  <script src="../../assets/js/vendor/clipboard.min.js"></script>
+  <script src="../../assets/js/vendor/holder.min.js"></script>
+  <script src="../../assets/js/src/application.js"></script>
+  <script src="../../assets/js/src/search.js"></script>
+  <script src="../../assets/js/src/ie-emulation-modes-warning.js"></script>
+  <script src="../../assets/js/src/pwa.js"></script>
+  </body>
+</html>

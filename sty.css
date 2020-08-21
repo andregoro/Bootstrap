@@ -1,0 +1,41 @@
+#d1,#d2,#d3{
+    border: 10px dotted #000;
+    padding: 0px 10px 50px 10px;
+    background-color: #0F0;
+}
+#d1{
+    background-clip: border-box;
+}
+#d2{
+    background-clip: padding-box;
+}
+#d3{
+    background-clip: content-box;
+}
+#dv1{
+    width: 300px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: linear-gradient(90deg,#f00,#ff0 60%,#00f,#000);
+    /* background: linear-gradient(to right,#f00,#ff0); */
+}
+#dv2{
+    position: relative;
+    top: 1px;
+    width: 300px;
+    height: 300px;
+    border: 1px #000 solid;
+    background: radial-gradient(#f00,#00f,#000);
+    /* background: linear-gradient(to right,#f00,#ff0); */
+}
+h1{
+    font-size: 100pt;
+    background: linear-gradient(45deg,#f00,5%,#ff0);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+h2{
+    font-size: 50px;
+    color: #f00;
+    text-shadow: 10px 10px 0px #000;
+}
